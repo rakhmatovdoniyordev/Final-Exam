@@ -125,7 +125,6 @@ ${cartItems
 
   return (
     <div className="container my-10">
-      {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-sm mb-8">
         <button onClick={() => navigate("/")} className="hover:underline">
           Home
@@ -141,11 +140,8 @@ ${cartItems
         </span>
         <p>Checkout</p>
       </div>
-
       <h1 className="text-3xl font-bold text-center mb-12">Check Out</h1>
-
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        {/* Contact Information Form */}
         <div className="bg-white rounded-lg shadow p-6">
           <h2 className="text-xl font-semibold mb-6">Contact Information</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -187,14 +183,12 @@ ${cartItems
               fullWidth
               variant="outlined"
             />{" "}
-            {/* Added Address field */}
             <TextField
               label="Comments"
               name="comments"
               fullWidth
               variant="outlined"
             />{" "}
-            {/* Added Comments field */}
             <button
               type="submit"
               disabled={isSubmitting}
@@ -204,8 +198,6 @@ ${cartItems
             </button>
           </form>
         </div>
-
-        {/* Order Summary */}
         <div className="bg-white rounded-lg shadow p-6 h-fit">
           <h2 className="text-xl font-semibold mb-6">Order Summary</h2>
           <div className="space-y-4">
@@ -231,7 +223,6 @@ ${cartItems
                 </span>
               </div>
             ))}
-
             <div className="border-t pt-4 mt-4 space-y-3">
               <div className="flex justify-between">
                 <span>Subtotal</span>
